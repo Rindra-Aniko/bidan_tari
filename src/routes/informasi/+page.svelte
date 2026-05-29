@@ -6,19 +6,29 @@
   
   // Helper to optimize Unsplash images
   function optimizeImageUrl(url, width = 800) {
-    if (!url) return '';
-    if (url.includes('unsplash.com') && !url.includes('w=')) {
-      const separator = url.includes('?') ? '&' : '?';
-      return `${url}${separator}w=${width}&q=75&auto=format`;
+    if (!url || !url.includes('unsplash.com')) return url;
+    try {
+      const u = new URL(url);
+      u.searchParams.set('w', width);
+      u.searchParams.set('q', '75');
+      u.searchParams.set('auto', 'format');
+      return u.toString();
+    } catch {
+      return url;
     }
-    return url;
+  }
+
+  function getSrcset(url, sizes = [400, 800, 1200]) {
+    if (!url || !url.includes('unsplash.com')) return null;
+    return sizes.map(w => `${optimizeImageUrl(url, w)} ${w}w`).join(', ');
   }
 </script>
 
 <svelte:head>
   <title>Informasi — Klinik Bidan Sri Deby Utari</title>
   <meta name="description" content="Sumber terpercaya untuk kesehatan ibu dan buah hati. Temukan panduan profesional, tips kehamilan, dan berita terbaru dari dunia kebidanan di Klinik Bidan Sri Deby Utari." />
-  <link rel="preload" href="https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" as="image" fetchpriority="high" />
+  <link rel="preload" href={optimizeImageUrl("https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?auto=format&fit=crop&ixlib=rb-4.1.0", 400)} as="image" media="(max-width: 767px)" fetchpriority="high" />
+  <link rel="preload" href={optimizeImageUrl("https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?auto=format&fit=crop&ixlib=rb-4.1.0", 800)} as="image" media="(min-width: 768px)" fetchpriority="high" />
 </svelte:head>
 
 <!-- Hero -->
@@ -26,7 +36,7 @@
   <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-pink-50 rounded-full -mr-48 -mt-48 opacity-70"></div>
   <div class="absolute bottom-0 left-0 w-80 h-80 bg-pink-50 rounded-full -ml-40 -mb-40 opacity-50"></div>
 
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10" use:reveal={{ y: 30, duration: 800 }}>
 
     <div class="lg:col-span-7 space-y-8">
       <div class="space-y-5">
@@ -56,11 +66,13 @@
       </div>
     </div>
 
-    <div class="lg:col-span-5 flex justify-center lg:justify-end w-full">
+    <div class="lg:col-span-5 flex justify-center lg:justify-end w-full" use:reveal={{ y: 30, duration: 800, delay: 200 }}>
       <div class="bg-white p-5 rounded-3xl border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-500 max-w-md w-full">
         <div class="overflow-hidden rounded-2xl">
           <img
-            src="https://wsrv.nl/?url=https://images.pexels.com/photos/35065922/pexels-photo-35065922.jpeg&q=60"
+            src={optimizeImageUrl("https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?auto=format&fit=crop&ixlib=rb-4.1.0", 800)}
+            srcset={getSrcset("https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?auto=format&fit=crop&ixlib=rb-4.1.0", [400, 800])}
+            sizes="(max-width: 768px) 100vw, 400px"
             alt="Ilustrasi interior kamar bayi"
             class="w-full h-[400px] object-cover transition-transform duration-700 hover:scale-105"
             width="408"
@@ -102,7 +114,7 @@
 <!-- Articles Grid -->
 <section class="w-full bg-pink-50/40 font-montserrat antialiased">
   <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8" use:reveal={{ y: 40, duration: 800, delay: 100 }}>
 
       {#if !featuredArticle && articles.length === 0}
         <div class="col-span-full py-24 text-center bg-white rounded-3xl border border-pink-100/60 p-8 shadow-sm">
@@ -116,7 +128,7 @@
           <div class="lg:col-span-2 flex flex-col justify-between bg-white rounded-2xl overflow-hidden p-8 md:p-10 border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
             <div>
               <div class="w-full h-72 md:h-96 rounded-2xl overflow-hidden mb-8 group">
-                <img src={optimizeImageUrl(featuredArticle.image, 800)} alt={featuredArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="800" height="450" loading="lazy">
+                <img src={optimizeImageUrl(featuredArticle.image, 800)} srcset={getSrcset(featuredArticle.image, [400, 800])} sizes="(max-width: 768px) 100vw, 800px" alt={featuredArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="800" height="450" loading="lazy">
               </div>
               <div class="flex items-center gap-4 text-xs font-bold mb-5 uppercase tracking-widest">
                 <span class="bg-pink-50 text-pink-500 px-4 py-1.5 rounded-full">{featuredArticle.category}</span>
@@ -160,7 +172,7 @@
             <div class="bg-white rounded-2xl overflow-hidden p-6 border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex-1 flex flex-col justify-between">
               <div>
                 <div class="w-full h-48 rounded-xl overflow-hidden mb-5 group">
-                  <img src={optimizeImageUrl(sidebarArticle.image, 400)} alt={sidebarArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="360" height="192" loading="lazy">
+                  <img src={optimizeImageUrl(sidebarArticle.image, 400)} srcset={getSrcset(sidebarArticle.image, [200, 400])} sizes="(max-width: 768px) 100vw, 400px" alt={sidebarArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="360" height="192" loading="lazy">
                 </div>
                 <div class="flex items-center gap-2 mb-3">
                   <span class="text-xs text-pink-500 font-bold uppercase tracking-widest block font-montserrat">{sidebarArticle.category}</span>
@@ -184,7 +196,7 @@
           <div class="bg-white rounded-2xl overflow-hidden p-6 border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col justify-between h-full">
             <div>
               <div class="w-full h-56 rounded-xl overflow-hidden mb-5 group">
-                <img src={optimizeImageUrl(article.image, 400)} alt={article.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="360" height="224" loading="lazy">
+                <img src={optimizeImageUrl(article.image, 400)} srcset={getSrcset(article.image, [200, 400])} sizes="(max-width: 768px) 100vw, 400px" alt={article.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="360" height="224" loading="lazy">
               </div>
               <div class="flex items-center justify-between mb-4">
                 <span class="bg-pink-50 text-pink-500 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest inline-block font-montserrat">{article.category}</span>
@@ -214,7 +226,7 @@
 
 <!-- CTA / Newsletter -->
 <section class="w-full px-6 py-12 mb-12">
-  <div class="max-w-6xl w-full mx-auto">
+  <div class="max-w-6xl w-full mx-auto" use:reveal={{ y: 40, duration: 800 }}>
     <div class="bg-white shadow-xl shadow-pink-500/5 rounded-3xl p-10 md:p-16 flex flex-col md:flex-row items-center gap-14 justify-between border border-gray-100">
 
       <div class="w-full md:w-1/2 flex flex-col justify-center">
