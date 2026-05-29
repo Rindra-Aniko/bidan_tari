@@ -23,7 +23,7 @@
         <span class="text-xs font-bold tracking-widest text-pink-500 uppercase font-montserrat">
           Journal & Edukasi
         </span>
-        <h1 class="text-5xl md:text-7xl font-black leading-[1.1] font-merriweather text-gray-900">
+        <h1 class="text-4xl md:text-7xl font-black leading-[1.1] font-merriweather text-gray-900">
           Informasi & <span class="text-pink-500">Berita</span> <br/> Kebidanan
         </h1>
       </div>

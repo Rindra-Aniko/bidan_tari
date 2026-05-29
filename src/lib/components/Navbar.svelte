@@ -11,14 +11,6 @@
     { href: '/informasi', label: 'Informasi' },
     { href: '/tentang', label: 'Tentang' }
   ];
-
-  function toggleMobile() {
-    mobileOpen = !mobileOpen;
-  }
-
-  function closeMobile() {
-    mobileOpen = false;
-  }
 </script>
 
 <!-- Navbar -->
@@ -27,9 +19,9 @@
   <!-- Logo -->
   <a href="/" class="flex items-center space-x-3 group">
     <div class="w-10 h-10 md:w-11 md:h-11 rounded-xl flex items-center justify-center overflow-hidden bg-pink-50 shadow-sm group-hover:shadow-md transition-shadow">
-      <img src="/favicon-96x96.png" alt="Logo" class="w-full h-full object-cover" width="44" height="44" />
+      <img src="/favicon.svg" alt="Logo" class="w-8 h-8 md:w-9 md:h-9 object-contain" width="36" height="36" />
     </div>
-    
+
     <div class="flex flex-col">
       <span class="text-sm md:text-base font-bold tracking-tight text-gray-900 leading-tight">
         Bdn. Sri Debi Utari
@@ -59,7 +51,7 @@
   </div>
 
   <!-- Mobile Hamburger -->
-  <button onclick={toggleMobile} class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-50 transition-colors" aria-label="Toggle menu">
+  <button type="button" onclick={() => mobileOpen = !mobileOpen} class="relative z-50 md:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-gray-50 transition-colors cursor-pointer" aria-label="Toggle menu">
     {#if mobileOpen}
       <svg class="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -75,13 +67,13 @@
 <!-- Mobile Menu Overlay -->
 {#if mobileOpen}
   <!-- svelte-ignore a11y_no_static_element_interactions -->
-  <div class="fixed inset-0 bg-black/40 z-40 md:hidden" onclick={closeMobile} onkeydown={(e) => e.key === 'Escape' && closeMobile()}></div>
+  <div class="fixed inset-0 bg-black/40 z-40 md:hidden" onclick={() => mobileOpen = false} onkeydown={(e) => e.key === 'Escape' && (mobileOpen = false)}></div>
   
   <div class="fixed top-0 right-0 h-full w-72 bg-white shadow-2xl z-50 md:hidden p-6 flex flex-col animate-slide-in">
     
     <div class="flex items-center justify-between mb-8">
       <span class="text-sm font-bold text-gray-900 font-merriweather">Menu</span>
-      <button onclick={closeMobile} aria-label="Close menu" class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors">
+      <button onclick={() => mobileOpen = false} aria-label="Close menu" class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors">
         <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
@@ -93,7 +85,7 @@
         {@const isActive = $page.url.pathname === item.href}
         <a 
           href={item.href}
-          onclick={closeMobile}
+          onclick={() => mobileOpen = false}
           class="px-4 py-3 rounded-xl text-sm font-medium transition-colors {isActive ? 'text-pink-600 bg-pink-50' : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'}"
         >
           {item.label}
