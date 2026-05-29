@@ -34,7 +34,7 @@
 
       <div class="flex items-center gap-4 pt-4">
         <div class="flex -space-x-3 overflow-hidden">
-          <img class="inline-block h-11 w-11 rounded-full ring-[3px] ring-white object-cover" src="https://images.unsplash.com/photo-1707325345057-a5f67014d9af?q=80&w=88&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Avatar ibu" width="44" height="44" loading="lazy">
+          <img class="inline-block h-11 w-11 rounded-full ring-[3px] ring-white object-cover" src="/image/pexels-nobleseed.jpg" alt="Avatar ibu" width="44" height="44" loading="lazy">
           <img class="inline-block h-11 w-11 rounded-full ring-[3px] ring-white object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=88" alt="Avatar bidan" width="44" height="44" loading="lazy">
           <div class="flex h-11 w-11 items-center justify-center rounded-full bg-pink-500 text-xs font-bold text-white ring-[3px] ring-white">
             +1k
@@ -50,7 +50,7 @@
       <div class="bg-white p-5 rounded-3xl border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-500 max-w-md w-full">
         <div class="overflow-hidden rounded-2xl">
           <img
-            src="https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0"
+            src="https://images.pexels.com/photos/35065922/pexels-photo-35065922.jpeg"
             alt="Ilustrasi interior kamar bayi"
             class="w-full h-[400px] object-cover transition-transform duration-700 hover:scale-105"
             width="408"
