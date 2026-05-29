@@ -55,7 +55,7 @@
       <div class="flex items-center gap-4 pt-4">
         <div class="flex -space-x-3 overflow-hidden">
           <img class="inline-block h-11 w-11 rounded-full ring-[3px] ring-white object-cover" src="/image/pexels-nobleseed.jpg" alt="Avatar ibu" width="44" height="44" loading="lazy">
-          <img class="inline-block h-11 w-11 rounded-full ring-[3px] ring-white object-cover" src="https://wsrv.nl/?url=https://images.unsplash.com/photo-1544005313-94ddf0286df2&q=60" alt="Avatar bidan" width="44" height="44" loading="lazy">
+          <img class="inline-block h-11 w-11 rounded-full ring-[3px] ring-white object-cover" src={optimizeImageUrl("https://images.unsplash.com/photo-1544005313-94ddf0286df2", 88)} alt="Avatar bidan" width="44" height="44" loading="lazy">
           <div class="flex h-11 w-11 items-center justify-center rounded-full bg-pink-500 text-xs font-bold text-white ring-[3px] ring-white">
             +1k
           </div>

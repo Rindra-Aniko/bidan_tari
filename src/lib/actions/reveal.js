@@ -28,18 +28,19 @@ export function reveal(node, options = {}) {
 	const x = options.x ?? 0;
 	const y = options.y ?? (options.x !== undefined ? 0 : 30);
 
-	node.style.opacity = '0';
-	
-	let transformParts = [];
-	if (x !== 0) transformParts.push(`translateX(${x}px)`);
-	if (y !== 0) transformParts.push(`translateY(${y}px)`);
-	
-	node.style.transform = transformParts.length > 0 ? transformParts.join(' ') : 'translateY(0px)';
-	node.style.transition = `opacity ${duration}ms cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms`;
-
 	const observer = getSharedObserver();
-	// Delay observation until DOM and SvelteKit transitions have mounted
+	
+	// Batch DOM writes into a single animation frame to avoid layout thrashing
 	const frameId = requestAnimationFrame(() => {
+		node.style.opacity = '0';
+		
+		let transformParts = [];
+		if (x !== 0) transformParts.push(`translateX(${x}px)`);
+		if (y !== 0) transformParts.push(`translateY(${y}px)`);
+		
+		node.style.transform = transformParts.length > 0 ? transformParts.join(' ') : 'translateY(0px)';
+		node.style.transition = `opacity ${duration}ms cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms`;
+
 		observer.observe(node);
 		observedElements.set(node, true);
 	});
