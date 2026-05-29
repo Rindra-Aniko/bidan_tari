@@ -86,9 +86,9 @@
 
     <!-- Load More Button -->
     <div class="flex justify-center mt-16">
-      <button class="px-10 py-3.5 rounded-full text-sm font-bold border border-gray-200 text-gray-700 bg-white transition-all duration-300 hover:border-pink-200 hover:text-pink-500 font-montserrat">
-        Lihat Lebih Banyak
-      </button>
+      <a href="https://www.instagram.com/pbm_tari_lorenda/" target="_blank" rel="noopener noreferrer" class="inline-block px-10 py-3.5 rounded-full text-sm font-bold border text-center border-gray-200 text-gray-700 bg-white transition-all duration-300 hover:border-pink-200 hover:text-pink-500 font-montserrat">
+        Lihat Lebih Banyak di Instagram
+      </a>
     </div>
 
   </div>

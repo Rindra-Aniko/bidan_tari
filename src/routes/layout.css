@@ -84,3 +84,17 @@
   from { transform: scale(1) translateY(0); }
   to { transform: scale(0.98) translateY(-10px); }
 }
+
+/* Reveal.js Data Attribute Styles (Optimized to avoid Layout Thrashing) */
+[data-reveal="hidden"] {
+  opacity: 0;
+  transform: translateY(var(--rev-y, 30px)) translateX(var(--rev-x, 0px));
+  transition: opacity var(--rev-dur, 600ms) cubic-bezier(0.4, 0, 0.2, 1) var(--rev-del, 0ms),
+              transform var(--rev-dur, 600ms) cubic-bezier(0.4, 0, 0.2, 1) var(--rev-del, 0ms);
+}
+[data-reveal="visible"] {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+  transition: opacity var(--rev-dur, 600ms) cubic-bezier(0.4, 0, 0.2, 1) var(--rev-del, 0ms),
+              transform var(--rev-dur, 600ms) cubic-bezier(0.4, 0, 0.2, 1) var(--rev-del, 0ms);
+}

@@ -10,8 +10,7 @@ function getSharedObserver() {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					const node = entry.target;
-					node.style.opacity = '1';
-					node.style.transform = 'none';
+					node.dataset.reveal = 'visible';
 					sharedObserver.unobserve(node);
 					observedElements.delete(node);
 				}
@@ -30,24 +29,18 @@ export function reveal(node, options = {}) {
 
 	const observer = getSharedObserver();
 	
-	// Batch DOM writes into a single animation frame to avoid layout thrashing
-	const frameId = requestAnimationFrame(() => {
-		node.style.opacity = '0';
-		
-		let transformParts = [];
-		if (x !== 0) transformParts.push(`translateX(${x}px)`);
-		if (y !== 0) transformParts.push(`translateY(${y}px)`);
-		
-		node.style.transform = transformParts.length > 0 ? transformParts.join(' ') : 'translateY(0px)';
-		node.style.transition = `opacity ${duration}ms cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms`;
+	// Use CSS variables and data attributes to avoid inline style layout thrashing
+	node.dataset.reveal = 'hidden';
+	node.style.setProperty('--rev-dur', `${duration}ms`);
+	if (delay > 0) node.style.setProperty('--rev-del', `${delay}ms`);
+	if (x !== 0) node.style.setProperty('--rev-x', `${x}px`);
+	if (y !== 30) node.style.setProperty('--rev-y', `${y}px`);
 
-		observer.observe(node);
-		observedElements.set(node, true);
-	});
+	observer.observe(node);
+	observedElements.set(node, true);
 
 	return {
 		destroy() {
-			cancelAnimationFrame(frameId);
 			if (observedElements.has(node)) {
 				observer.unobserve(node);
 				observedElements.delete(node);
