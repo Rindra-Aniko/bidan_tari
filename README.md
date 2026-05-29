@@ -1,65 +1,89 @@
-# Svelte library
+# Bidan Tari - Website Layanan Kesehatan Ibu & Anak
 
-Everything you need to build a Svelte library, powered by [`sv`](https://npmjs.com/package/sv).
+Website resmi Bidan Tari yang menyediakan informasi layanan kesehatan, edukasi (informasi), galeri kegiatan, dan fitur baby spa. Aplikasi ini dibangun menggunakan SvelteKit dengan fokus pada performa dan kemudahan pengelolaan konten melalui panel admin.
 
-Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).
+## 🚀 Teknologi Utama
 
-## Creating a project
+- **Framework**: [SvelteKit 5](https://svelte.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Database**: [SQLite](https://www.sqlite.org/) / [Turso](https://turso.tech/)
+- **ORM**: [Drizzle ORM](https://orm.drizzle.team/)
+- **Fonts**: Montserrat & Merriweather (Self-hosted)
+- **Icons**: Custom PNG/SVG Icons
 
-If you're seeing this, you've probably already done this step. Congrats!
+## ✨ Fitur Utama
 
+- **Landing Page**: Informasi umum mengenai layanan Bidan Tari.
+- **Layanan**: Detail layanan kesehatan yang ditawarkan.
+- **Baby Spa**: Informasi khusus mengenai fasilitas dan layanan baby spa.
+- **Galeri**: Dokumentasi foto kegiatan dan fasilitas.
+- **Informasi (Blog)**: Artikel edukasi kesehatan bagi ibu dan anak.
+- **WhatsApp Widget**: Integrasi langsung untuk konsultasi via WhatsApp.
+- **Panel Admin**:
+    - Manajemen artikel/informasi (CRUD).
+    - Manajemen user/admin.
+    - Autentikasi aman.
+
+## 🛠️ Persiapan Lingkungan (Setup)
+
+### 1. Prasyarat
+Pastikan Anda sudah menginstal:
+- [Node.js](https://nodejs.org/) (versi terbaru direkomendasikan)
+- NPM (bawaan Node.js)
+
+### 2. Instalasi Dependensi
 ```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+npm install
 ```
 
-To recreate this project with the same configuration:
-
+### 3. Konfigurasi Variabel Lingkungan
+Salin file `.env.example` menjadi `.env` dan sesuaikan nilainya:
 ```sh
-# recreate this project
-npx sv@0.15.3 create --template library --no-types --install npm bdn_tari
+cp .env.example .env
+```
+Isi dasar `.env`:
+```env
+DATABASE_URL=file:local.db
+# Jika menggunakan Turso:
+# TURSO_CONNECTION_URL=libsql://...
+# TURSO_AUTH_TOKEN=...
 ```
 
-## Developing
+### 4. Setup Database
+Jalankan migrasi untuk membuat tabel yang diperlukan:
+```sh
+# Menghasilkan file migrasi
+npm run db:generate
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+# Mendorong skema ke database
+npm run db:push
+```
 
+## 💻 Pengembangan
+
+Jalankan server pengembangan:
 ```sh
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
+Akses aplikasi di [http://localhost:5173](http://localhost:5173).
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+## 📜 Perintah Tersedia (Scripts)
 
-## Building
+- `npm run dev`: Menjalankan aplikasi dalam mode pengembangan.
+- `npm run build`: Membangun aplikasi untuk produksi.
+- `npm run preview`: Menjalankan aplikasi hasil build secara lokal.
+- `npm run db:push`: Sinkronisasi skema Drizzle ke database.
+- `npm run db:generate`: Membuat file migrasi database.
+- `npm run db:migrate`: Menjalankan migrasi database.
+- `npm run db:studio`: Membuka antarmuka GUI untuk mengelola database.
 
-To build your library:
+## 📂 Struktur Folder Utama
 
-```sh
-npm pack
-```
+- `src/lib/components`: Komponen UI yang dapat digunakan kembali (Navbar, Footer, dll).
+- `src/lib/server/db`: Konfigurasi database dan skema Drizzle.
+- `src/routes`: Struktur halaman website (termasuk admin dan API).
+- `static/`: Aset statis seperti gambar, ikon, dan font.
 
-To create a production version of your showcase app:
+---
 
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```sh
-npm publish
-```
+Dikembangkan untuk memberikan layanan informasi kesehatan terbaik bagi masyarakat.
