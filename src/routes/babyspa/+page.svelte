@@ -49,7 +49,7 @@
   <div class="max-w-6xl w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
     <!-- Image -->
-    <div class="relative w-full group" use:reveal={{ duration: 800, x: -40 }}>
+    <div class="relative w-full group">
       <div class="aspect-[4/5] md:aspect-[4/3] w-full rounded-2xl overflow-hidden bg-pink-100 border border-pink-100 relative z-10">
         <img src="/image/baby_spa.webp" alt="Baby Spa" class="w-full h-full object-scale-down object-left md:object-center transition-transform duration-700 group-hover:scale-105" width="600" height="450" loading="lazy">
       </div>
@@ -70,7 +70,7 @@
     </div>
 
     <!-- Text Content -->
-    <div class="flex flex-col space-y-8" use:reveal={{ duration: 800, x: 40 }}>
+    <div class="flex flex-col space-y-8">
       <div>
         <span class="inline-block text-pink-500 text-xs font-semibold px-1 py-1 mb-4 tracking-widest font-montserrat uppercase">
           Signature Service

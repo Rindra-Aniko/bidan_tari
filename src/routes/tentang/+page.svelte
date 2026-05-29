@@ -5,6 +5,7 @@
 <svelte:head>
   <title>Tentang Kami — Klinik Bidan Sri Deby Utari</title>
   <meta name="description" content="Kenali Bidan Sri Debi Utari, S.Tr.Keb — bidan profesional berpengalaman di Kerinci, Jambi. Melayani persalinan, pemeriksaan kehamilan, dan perawatan ibu & anak dengan penuh kehangatan." />
+  <link rel="preload" href="/image/PROFILE_2.webp" as="image" fetchpriority="high" />
 </svelte:head>
 
 <!-- Hero Section -->
@@ -35,7 +36,7 @@
     <div class="flex justify-center lg:justify-end">
       <div class="w-full max-w-[480px] aspect-[4/5] rounded-2xl overflow-hidden border border-pink-100">
         <img
-          src="/image/PROFILE 2.webp"
+          src="/image/PROFILE_2.webp"
           alt="Foto Profil Bidan"
           class="w-full h-full object-cover object-center"
           width="480"
