@@ -13,7 +13,7 @@
   <div class="absolute top-20 left-10 w-64 h-64 bg-pink-50 rounded-full -z-0 opacity-60"></div>
   <div class="absolute bottom-10 right-10 w-48 h-48 bg-pink-50 rounded-full -z-0 opacity-60"></div>
 
-  <div class="max-w-4xl mx-auto flex flex-col items-center relative z-10" use:reveal={{ duration: 800, y: 30 }}>
+  <div class="max-w-4xl mx-auto flex flex-col items-center relative z-10">
 
     <div class="inline-flex items-center gap-2 bg-pink-50 text-pink-500 text-xs font-semibold px-5 py-2 rounded-full mb-8 border border-pink-100 font-montserrat uppercase tracking-widest">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
@@ -51,7 +51,7 @@
     <!-- Image -->
     <div class="relative w-full group" use:reveal={{ duration: 800, x: -40 }}>
       <div class="aspect-[4/5] md:aspect-[4/3] w-full rounded-2xl overflow-hidden bg-pink-100 border border-pink-100 relative z-10">
-        <img src="/image/baby_spa.webp" alt="Baby Spa" class="w-full h-full object-scale-down object-left md:object-center transition-transform duration-700 group-hover:scale-105">
+        <img src="/image/baby_spa.webp" alt="Baby Spa" class="w-full h-full object-scale-down object-left md:object-center transition-transform duration-700 group-hover:scale-105" width="600" height="450" loading="lazy">
       </div>
       <div class="absolute -bottom-8 -right-4 md:-right-8 bg-white p-5 rounded-2xl border border-pink-100 max-w-[220px] z-20 transition-transform duration-500 group-hover:-translate-y-1">
         <div class="flex items-center gap-2 text-pink-500 font-semibold text-sm mb-2 font-montserrat uppercase tracking-wider">

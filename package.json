@@ -45,6 +45,7 @@
 		"drizzle-kit": "^0.31.10",
 		"drizzle-orm": "^0.45.2",
 		"publint": "^0.3.18",
+		"sharp": "^0.34.5",
 		"svelte": "^5.55.2",
 		"tailwindcss": "^4.2.2",
 		"typescript": "^6.0.2",

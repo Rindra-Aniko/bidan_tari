@@ -12,7 +12,10 @@
   
   <!-- Background Image with Fade Mask -->
   <div class="absolute inset-0 z-0">
-    <img src="/image/hero_tari.webp" alt="Hero Background" class="w-full h-full object-cover object-top" />
+    <picture>
+      <source srcset="/image/hero_tari_mobile.webp" media="(max-width: 767px)" />
+      <img src="/image/hero_tari.webp" alt="Hero Background" class="w-full h-full object-cover object-top" width="1600" height="900" fetchpriority="high" loading="eager" />
+    </picture>
     <!-- Horizontal fade: solid white on the left (for text), transparent on the right -->
     <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/10 md:to-transparent"></div>
     <!-- Bottom fade: blends into the next white section -->
@@ -22,7 +25,7 @@
   </div>
 
   <div class="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
-    <div class="max-w-2xl" use:reveal={{ duration: 800, x: 100 }}>
+    <div class="max-w-2xl">
 
       <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/60 backdrop-blur-md border border-pink-100/50 rounded-full mb-8 shadow-sm">
         <span class="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></span>
@@ -297,7 +300,7 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150" alt="Ibu Sarah">
+          <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150" alt="Ibu Sarah" width="40" height="40" loading="lazy">
           <div>
             <h4 class="text-gray-900 font-bold text-sm font-merriweather">Ibu Sarah</h4>
             <p class="text-pink-500 text-xs font-medium font-montserrat">Persalinan Normal</p>
@@ -322,7 +325,7 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Ibu Ratna">
+          <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Ibu Ratna" width="40" height="40" loading="lazy">
           <div>
             <h4 class="text-gray-900 font-bold text-sm font-merriweather">Ibu Ratna</h4>
             <p class="text-pink-500 text-xs font-medium font-montserrat">Baby Spa</p>
@@ -347,7 +350,7 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1554151228-14d9def656e4?w=150" alt="Ibu Dina">
+          <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1554151228-14d9def656e4?w=150" alt="Ibu Dina" width="40" height="40" loading="lazy">
           <div>
             <h4 class="text-gray-900 font-bold text-sm font-merriweather">Ibu Dina</h4>
             <p class="text-pink-500 text-xs font-medium font-montserrat">Pasien BPJS</p>

@@ -84,7 +84,7 @@
 				
 				<!-- Mobile Logout (Hidden on desktop) -->
 				<form method="POST" action="?/logout" use:enhance class="md:hidden">
-					<button type="submit" class="border border-gray-200 hover:bg-rose-50 text-gray-500 hover:text-rose-500 p-3 rounded-xl">
+					<button type="submit" class="border border-gray-200 hover:bg-rose-50 text-gray-500 hover:text-rose-500 p-3 rounded-xl" aria-label="Keluar">
 						<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
 					</button>
 				</form>

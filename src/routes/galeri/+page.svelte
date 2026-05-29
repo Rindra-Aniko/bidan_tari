@@ -30,7 +30,7 @@
 <section class="min-h-[600px] bg-white flex items-center px-6 md:px-20 lg:px-32 py-20 md:py-28 relative overflow-hidden">
   <div class="absolute top-[-120px] right-[-120px] w-[400px] h-[400px] bg-pink-50 rounded-full opacity-60"></div>
   <div class="absolute bottom-[-80px] left-[-80px] w-[260px] h-[260px] bg-pink-50 rounded-full opacity-40"></div>
-  <div class="max-w-4xl w-full text-left relative z-10" use:reveal={{ duration: 800, y: 30 }}>
+  <div class="max-w-4xl w-full text-left relative z-10">
 
     <span class="inline-block text-pink-500 text-xs font-montserrat font-semibold uppercase tracking-widest mb-6">
       Visual Story
@@ -74,6 +74,9 @@
             src={image.src}
             alt={image.alt}
             class="w-full h-full object-cover {image.objectClass || ''} transition-transform duration-700 group-hover:scale-105"
+            width="400"
+            height="300"
+            loading="lazy"
           />
           <div class="absolute inset-0 bg-gradient-to-t from-pink-500/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
         </div>

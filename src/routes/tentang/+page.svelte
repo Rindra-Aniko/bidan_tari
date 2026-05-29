@@ -11,7 +11,7 @@
 <section class="min-h-screen bg-white flex items-center justify-center px-6 py-20 md:py-28 md:px-16 lg:px-24">
   <div class="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-    <div class="space-y-8 max-w-xl" use:reveal={{ duration: 800, x: -40 }}>
+    <div class="space-y-8 max-w-xl">
       <span class="text-xs font-semibold tracking-widest text-pink-500 uppercase block font-montserrat">
         Dedikasi & Kasih Sayang
       </span>
@@ -33,11 +33,15 @@
     </div>
 
     <div class="flex justify-center lg:justify-end">
-      <div class="w-full max-w-[480px] aspect-[4/5] rounded-2xl overflow-hidden border border-pink-100" use:reveal={{ duration: 800, x: 40 }}>
+      <div class="w-full max-w-[480px] aspect-[4/5] rounded-2xl overflow-hidden border border-pink-100">
         <img
           src="/image/PROFILE 2.webp"
           alt="Foto Profil Bidan"
           class="w-full h-full object-cover object-center"
+          width="480"
+          height="600"
+          loading="eager"
+          fetchpriority="high"
         />
       </div>
     </div>
@@ -198,6 +202,7 @@
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
+            title="Lokasi Praktik Bidan Sri Deby Utari"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>

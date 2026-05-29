@@ -11,7 +11,7 @@
 <section class="min-h-screen bg-white flex items-center px-6 md:px-20 lg:px-32 py-20 md:py-28 relative overflow-hidden">
   <div class="absolute top-[-120px] right-[-120px] w-[400px] h-[400px] bg-pink-50 rounded-full opacity-60"></div>
   <div class="absolute bottom-[-80px] left-[-80px] w-[260px] h-[260px] bg-pink-50 rounded-full opacity-40"></div>
-  <div class="max-w-4xl w-full text-left relative z-10" use:reveal={{ duration: 800, x: -50 }}>
+  <div class="max-w-4xl w-full text-left relative z-10">
 
     <span class="inline-block text-pink-500 text-xs font-montserrat font-semibold uppercase tracking-widest mb-6">
       Pelayanan Profesional & Penuh Kasih
@@ -57,7 +57,7 @@
       <!-- Persalinan Normal (wide card) -->
       <div class="md:col-span-2 bg-white rounded-2xl p-8 md:p-10 flex flex-col md:flex-row gap-10 items-center justify-between border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" use:reveal={{ y: 40, duration: 800 }}>
         <div class="w-full md:w-1/2 order-2 md:order-1">
-          <img src="/image/ruang_persalinan_m.webp" alt="Persalinan Normal" class="w-full h-64 object-cover rounded-2xl" />
+          <img src="/image/ruang_persalinan_m.webp" alt="Persalinan Normal" class="w-full h-64 object-cover rounded-2xl" width="600" height="400" loading="lazy" />
         </div>
         <div class="w-full md:w-1/2 order-1 md:order-2 flex flex-col items-start">
           <div class="w-12 h-12 bg-pink-50 text-pink-400 rounded-2xl flex items-center justify-center mb-6">
@@ -104,7 +104,7 @@
           </p>
         </div>
         <div>
-          <img src="/image/baby_spa_ok.webp" alt="Baby Spa" class="w-full h-44 object-cover rounded-2xl" />
+          <img src="/image/baby_spa_ok.webp" alt="Baby Spa" class="w-full h-44 object-cover rounded-2xl" width="600" height="400" loading="lazy" />
         </div>
       </div>
 
@@ -123,7 +123,7 @@
           </p>
         </div>
         <div class="w-full md:w-1/2 relative z-10">
-          <img src="/image/wanita_yoga.webp" alt="Senam Yoga" class="w-full h-64 object-cover rounded-2xl border border-white/20" />
+          <img src="/image/wanita_yoga.webp" alt="Senam Yoga" class="w-full h-64 object-cover rounded-2xl border border-white/20" width="600" height="400" loading="lazy" />
         </div>
       </div>
 
@@ -204,6 +204,9 @@
             src="/image/PROFILE_1.webp"
             alt="Bidan Sri Deby Utari"
             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            width="400"
+            height="533"
+            loading="lazy"
           />
         </div>
       </div>
