@@ -3,8 +3,12 @@
 </script>
 
 <svelte:head>
-  <title>Klinik Bidan Sri Deby Utari â€” Layanan 24 Jam Persalinan & Kesehatan Ibu Anak</title>
+  <title>Klinik Bidan Sri Deby Utari — Layanan 24 Jam Persalinan & Kesehatan Ibu Anak</title>
   <meta name="description" content="Klinik Bidan Sri Deby Utari menyediakan layanan persalinan normal, baby spa, yoga ibu hamil, dan pemeriksaan kehamilan 24 jam. Menerima pasien BPJS & Umum di Kerinci, Jambi." />
+  
+  <!-- Preload LCP Hero Images specifically for the homepage -->
+  <link rel="preload" href="/image/hero_tari.webp" as="image" media="(min-width: 768px)" fetchpriority="high" />
+  <link rel="preload" href="/image/hero_tari_mobile.webp" as="image" media="(max-width: 767px)" fetchpriority="high" />
 </svelte:head>
 
 <!-- Hero Section -->

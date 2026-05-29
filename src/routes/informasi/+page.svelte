@@ -3,6 +3,16 @@
   // Svelte 5 props
   const { data } = $props();
   const { featuredArticle, articles, dbError } = $derived(data);
+  
+  // Helper to optimize Unsplash images
+  function optimizeImageUrl(url, width = 800) {
+    if (!url) return '';
+    if (url.includes('unsplash.com') && !url.includes('w=')) {
+      const separator = url.includes('?') ? '&' : '?';
+      return `${url}${separator}w=${width}&q=75&auto=format`;
+    }
+    return url;
+  }
 </script>
 
 <svelte:head>
@@ -106,7 +116,7 @@
           <div class="lg:col-span-2 flex flex-col justify-between bg-white rounded-2xl overflow-hidden p-8 md:p-10 border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
             <div>
               <div class="w-full h-72 md:h-96 rounded-2xl overflow-hidden mb-8 group">
-                <img src={featuredArticle.image} alt={featuredArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="800" height="450" loading="lazy">
+                <img src={optimizeImageUrl(featuredArticle.image, 800)} alt={featuredArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="800" height="450" loading="lazy">
               </div>
               <div class="flex items-center gap-4 text-xs font-bold mb-5 uppercase tracking-widest">
                 <span class="bg-pink-50 text-pink-500 px-4 py-1.5 rounded-full">{featuredArticle.category}</span>
@@ -150,7 +160,7 @@
             <div class="bg-white rounded-2xl overflow-hidden p-6 border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex-1 flex flex-col justify-between">
               <div>
                 <div class="w-full h-48 rounded-xl overflow-hidden mb-5 group">
-                  <img src={sidebarArticle.image} alt={sidebarArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="360" height="192" loading="lazy">
+                  <img src={optimizeImageUrl(sidebarArticle.image, 400)} alt={sidebarArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="360" height="192" loading="lazy">
                 </div>
                 <div class="flex items-center gap-2 mb-3">
                   <span class="text-xs text-pink-500 font-bold uppercase tracking-widest block font-montserrat">{sidebarArticle.category}</span>
@@ -174,7 +184,7 @@
           <div class="bg-white rounded-2xl overflow-hidden p-6 border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col justify-between h-full">
             <div>
               <div class="w-full h-56 rounded-xl overflow-hidden mb-5 group">
-                <img src={article.image} alt={article.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="360" height="224" loading="lazy">
+                <img src={optimizeImageUrl(article.image, 400)} alt={article.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="360" height="224" loading="lazy">
               </div>
               <div class="flex items-center justify-between mb-4">
                 <span class="bg-pink-50 text-pink-500 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest inline-block font-montserrat">{article.category}</span>
