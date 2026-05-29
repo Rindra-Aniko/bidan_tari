@@ -11,7 +11,6 @@ export function reveal(node, options = {}) {
         
         node.style.transform = transformParts.length > 0 ? transformParts.join(' ') : 'translateY(0px)';
         node.style.transition = `opacity ${duration}ms cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms`;
-        node.style.willChange = 'opacity, transform';
 
         let observer;
         

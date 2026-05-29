@@ -75,7 +75,7 @@
 <!-- Mobile Menu Overlay -->
 {#if mobileOpen}
   <!-- svelte-ignore a11y_no_static_element_interactions -->
-  <div class="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden" onclick={closeMobile} onkeydown={(e) => e.key === 'Escape' && closeMobile()}></div>
+  <div class="fixed inset-0 bg-black/40 z-40 md:hidden" onclick={closeMobile} onkeydown={(e) => e.key === 'Escape' && closeMobile()}></div>
   
   <div class="fixed top-0 right-0 h-full w-72 bg-white shadow-2xl z-50 md:hidden p-6 flex flex-col animate-slide-in">
     

@@ -28,7 +28,7 @@
     <div class="max-w-2xl">
 
       <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/60 backdrop-blur-md border border-pink-100/50 rounded-full mb-8 shadow-sm">
-        <span class="w-2 h-2 bg-pink-500 rounded-full animate-pulse"></span>
+        <span class="w-2 h-2 bg-pink-500 rounded-full"></span>
         <span class="text-pink-600 text-xs font-semibold tracking-wide font-montserrat uppercase">Layanan Ibu & Anak</span>
       </div>
 
