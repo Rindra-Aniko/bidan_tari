@@ -2,7 +2,7 @@
   import { reveal } from '$lib/actions/reveal.js';
   // Svelte 5 props
   const { data } = $props();
-  const { featuredArticle, articles } = $derived(data);
+  const { featuredArticle, articles, dbError } = $derived(data);
 </script>
 
 <svelte:head>
