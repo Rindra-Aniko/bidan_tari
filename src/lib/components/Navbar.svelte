@@ -27,7 +27,7 @@
   <!-- Logo -->
   <a href="/" class="flex items-center space-x-3 group">
     <div class="w-10 h-10 md:w-11 md:h-11 rounded-xl flex items-center justify-center overflow-hidden bg-pink-50 shadow-sm group-hover:shadow-md transition-shadow">
-      <img src="/favicon-96x96.png" alt="Logo" class="w-full h-full object-cover" />
+      <img src="/favicon-96x96.png" alt="Logo" class="w-full h-full object-cover" width="44" height="44" />
     </div>
     
     <div class="flex flex-col">

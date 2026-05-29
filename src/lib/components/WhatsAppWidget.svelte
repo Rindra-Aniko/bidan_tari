@@ -33,7 +33,7 @@
       <div class="flex items-center gap-3">
         <!-- Avatar with active online indicator -->
         <div class="relative w-10 h-10 rounded-full border border-white/20 overflow-hidden bg-pink-100 flex-shrink-0">
-          <img src="/image/PROFILE_1.webp" alt="Bidan Tari" class="w-full h-full object-cover" />
+          <img src="/image/PROFILE_1_avatar.webp" alt="Bidan Tari" class="w-full h-full object-cover" width="40" height="40" loading="lazy" />
           <span class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
         </div>
         <div>

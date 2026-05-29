@@ -68,7 +68,7 @@
 <!-- Layanan Unggulan -->
 <section class="max-w-6xl w-full mx-auto py-20 md:py-28 px-6">
 
-  <div class="text-center mb-16" use:reveal={{ y: 100 }}>
+  <div class="text-center mb-16">
     <span class="text-pink-500 text-xs font-bold tracking-widest uppercase font-montserrat">Layanan</span>
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mt-3 mb-4 font-merriweather">
       Layanan Unggulan Kami
