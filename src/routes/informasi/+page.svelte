@@ -8,6 +8,7 @@
 <svelte:head>
   <title>Informasi — Klinik Bidan Sri Deby Utari</title>
   <meta name="description" content="Sumber terpercaya untuk kesehatan ibu dan buah hati. Temukan panduan profesional, tips kehamilan, dan berita terbaru dari dunia kebidanan di Klinik Bidan Sri Deby Utari." />
+  <link rel="preload" href="https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0" as="image" fetchpriority="high" />
 </svelte:head>
 
 <!-- Hero -->
@@ -33,8 +34,8 @@
 
       <div class="flex items-center gap-4 pt-4">
         <div class="flex -space-x-3 overflow-hidden">
-          <img class="inline-block h-11 w-11 rounded-full ring-[3px] ring-white object-cover" src="https://images.unsplash.com/photo-1707325345057-a5f67014d9af?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Avatar ibu">
-          <img class="inline-block h-11 w-11 rounded-full ring-[3px] ring-white object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=100" alt="Avatar bidan">
+          <img class="inline-block h-11 w-11 rounded-full ring-[3px] ring-white object-cover" src="https://images.unsplash.com/photo-1707325345057-a5f67014d9af?q=80&w=88&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Avatar ibu" width="44" height="44" loading="lazy">
+          <img class="inline-block h-11 w-11 rounded-full ring-[3px] ring-white object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=88" alt="Avatar bidan" width="44" height="44" loading="lazy">
           <div class="flex h-11 w-11 items-center justify-center rounded-full bg-pink-500 text-xs font-bold text-white ring-[3px] ring-white">
             +1k
           </div>
@@ -49,9 +50,13 @@
       <div class="bg-white p-5 rounded-3xl border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-500 max-w-md w-full">
         <div class="overflow-hidden rounded-2xl">
           <img
-            src="https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="https://images.unsplash.com/photo-1470116945706-e6bf5d5a53ca?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.1.0"
             alt="Ilustrasi interior kamar bayi"
             class="w-full h-[400px] object-cover transition-transform duration-700 hover:scale-105"
+            width="408"
+            height="400"
+            loading="eager"
+            fetchpriority="high"
           />
         </div>
       </div>
@@ -101,7 +106,7 @@
           <div class="lg:col-span-2 flex flex-col justify-between bg-white rounded-2xl overflow-hidden p-8 md:p-10 border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
             <div>
               <div class="w-full h-72 md:h-96 rounded-2xl overflow-hidden mb-8 group">
-                <img src={featuredArticle.image} alt={featuredArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src={featuredArticle.image} alt={featuredArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="800" height="450" loading="lazy">
               </div>
               <div class="flex items-center gap-4 text-xs font-bold mb-5 uppercase tracking-widest">
                 <span class="bg-pink-50 text-pink-500 px-4 py-1.5 rounded-full">{featuredArticle.category}</span>
@@ -145,7 +150,7 @@
             <div class="bg-white rounded-2xl overflow-hidden p-6 border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex-1 flex flex-col justify-between">
               <div>
                 <div class="w-full h-48 rounded-xl overflow-hidden mb-5 group">
-                  <img src={sidebarArticle.image} alt={sidebarArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                  <img src={sidebarArticle.image} alt={sidebarArticle.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="360" height="192" loading="lazy">
                 </div>
                 <div class="flex items-center gap-2 mb-3">
                   <span class="text-xs text-pink-500 font-bold uppercase tracking-widest block font-montserrat">{sidebarArticle.category}</span>
@@ -169,7 +174,7 @@
           <div class="bg-white rounded-2xl overflow-hidden p-6 border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col justify-between h-full">
             <div>
               <div class="w-full h-56 rounded-xl overflow-hidden mb-5 group">
-                <img src={article.image} alt={article.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src={article.image} alt={article.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" width="360" height="224" loading="lazy">
               </div>
               <div class="flex items-center justify-between mb-4">
                 <span class="bg-pink-50 text-pink-500 text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest inline-block font-montserrat">{article.category}</span>
