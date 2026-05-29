@@ -36,7 +36,7 @@
   <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-pink-50 rounded-full -mr-48 -mt-48 opacity-70"></div>
   <div class="absolute bottom-0 left-0 w-80 h-80 bg-pink-50 rounded-full -ml-40 -mb-40 opacity-50"></div>
 
-  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10" use:reveal={{ y: 30, duration: 800 }}>
+  <div data-reveal="hidden" style="--rev-y: 30px; --rev-dur: 800ms;" class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center relative z-10" use:reveal={{ y: 30, duration: 800 }}>
 
     <div class="lg:col-span-7 space-y-8">
       <div class="space-y-5">
@@ -66,7 +66,7 @@
       </div>
     </div>
 
-    <div class="lg:col-span-5 flex justify-center lg:justify-end w-full" use:reveal={{ y: 30, duration: 800, delay: 200 }}>
+    <div data-reveal="hidden" style="--rev-y: 30px; --rev-dur: 800ms; --rev-del: 200ms;" class="lg:col-span-5 flex justify-center lg:justify-end w-full" use:reveal={{ y: 30, duration: 800, delay: 200 }}>
       <div class="bg-white p-5 rounded-3xl border border-pink-100 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-500 max-w-md w-full">
         <div class="overflow-hidden rounded-2xl">
           <img
@@ -114,7 +114,7 @@
 <!-- Articles Grid -->
 <section class="w-full bg-pink-50/40 font-montserrat antialiased">
   <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8" use:reveal={{ y: 40, duration: 800, delay: 100 }}>
+    <div data-reveal="hidden" style="--rev-y: 40px; --rev-dur: 800ms; --rev-del: 100ms;" class="grid grid-cols-1 lg:grid-cols-3 gap-8" use:reveal={{ y: 40, duration: 800, delay: 100 }}>
 
       {#if !featuredArticle && articles.length === 0}
         <div class="col-span-full py-24 text-center bg-white rounded-3xl border border-pink-100/60 p-8 shadow-sm">

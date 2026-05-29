@@ -10,7 +10,8 @@ function getSharedObserver() {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					const node = entry.target;
-					node.dataset.reveal = 'visible';
+					node.style.opacity = '1';
+					node.style.transform = 'none';
 					sharedObserver.unobserve(node);
 					observedElements.delete(node);
 				}
@@ -27,20 +28,27 @@ export function reveal(node, options = {}) {
 	const x = options.x ?? 0;
 	const y = options.y ?? (options.x !== undefined ? 0 : 30);
 
+	// Hide synchronously to prevent flash of unstyled content (FOUC)
+	node.style.opacity = '0';
+	
+	let transformParts = [];
+	if (x !== 0) transformParts.push(`translateX(${x}px)`);
+	if (y !== 0) transformParts.push(`translateY(${y}px)`);
+	
+	node.style.transform = transformParts.length > 0 ? transformParts.join(' ') : 'translateY(0px)';
+	node.style.transition = `opacity ${duration}ms cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms, transform ${duration}ms cubic-bezier(0.4, 0, 0.2, 1) ${delay}ms`;
+
 	const observer = getSharedObserver();
 	
-	// Use CSS variables and data attributes to avoid inline style layout thrashing
-	node.dataset.reveal = 'hidden';
-	node.style.setProperty('--rev-dur', `${duration}ms`);
-	if (delay > 0) node.style.setProperty('--rev-del', `${delay}ms`);
-	if (x !== 0) node.style.setProperty('--rev-x', `${x}px`);
-	if (y !== 30) node.style.setProperty('--rev-y', `${y}px`);
-
-	observer.observe(node);
-	observedElements.set(node, true);
+	// Delay observation slightly to ensure initial layout is complete
+	const frameId = requestAnimationFrame(() => {
+		observer.observe(node);
+		observedElements.set(node, true);
+	});
 
 	return {
 		destroy() {
+			cancelAnimationFrame(frameId);
 			if (observedElements.has(node)) {
 				observer.unobserve(node);
 				observedElements.delete(node);
