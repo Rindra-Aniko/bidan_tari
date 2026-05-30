@@ -86,7 +86,7 @@
           </p>
         </div>
         <div class="border-t border-pink-50 pt-6">
-          <span class="text-xs font-semibold uppercase tracking-widest text-pink-500 font-montserrat">USG & Lab Terintegrasi</span>
+          <span class="text-xs font-semibold uppercase tracking-widest text-pink-500 font-montserrat">Pemeriksaan Terintegrasi</span>
         </div>
       </div>
 
