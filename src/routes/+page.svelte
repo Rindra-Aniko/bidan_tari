@@ -304,9 +304,9 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150" alt="Ibu Sarah" width="40" height="40" loading="lazy">
+          <img class="w-10 h-10 rounded-full object-cover" src="/image/deka_apriani.webp" alt="Ibu Deka" width="40" height="40" loading="lazy">
           <div>
-            <h4 class="text-gray-900 font-bold text-sm font-merriweather">Ibu Sarah</h4>
+            <h4 class="text-gray-900 font-bold text-sm font-merriweather">Ibu Deka</h4>
             <p class="text-pink-500 text-xs font-medium font-montserrat">Persalinan Normal</p>
           </div>
         </div>
@@ -329,9 +329,9 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Ibu Ratna" width="40" height="40" loading="lazy">
+          <img class="w-10 h-10 rounded-full object-cover" src="/image/meri_fitriani.webp" alt="Ibu Meri" width="40" height="40" loading="lazy">
           <div>
-            <h4 class="text-gray-900 font-bold text-sm font-merriweather">Ibu Ratna</h4>
+            <h4 class="text-gray-900 font-bold text-sm font-merriweather">Ibu Meri</h4>
             <p class="text-pink-500 text-xs font-medium font-montserrat">Baby Spa</p>
           </div>
         </div>
@@ -354,9 +354,9 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <img class="w-10 h-10 rounded-full object-cover" src="https://images.unsplash.com/photo-1554151228-14d9def656e4?w=150" alt="Ibu Dina" width="40" height="40" loading="lazy">
+          <img class="w-10 h-10 rounded-full object-cover" src="/image/nialana_afrilia.webp" alt="Ibu Nailana" width="40" height="40" loading="lazy">
           <div>
-            <h4 class="text-gray-900 font-bold text-sm font-merriweather">Ibu Dina</h4>
+            <h4 class="text-gray-900 font-bold text-sm font-merriweather">Ibu Nailana</h4>
             <p class="text-pink-500 text-xs font-medium font-montserrat">Pasien BPJS</p>
           </div>
         </div>
