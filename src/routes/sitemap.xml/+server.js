@@ -9,7 +9,7 @@ export async function GET({ url, platform }) {
 
 	// Daftar halaman statis situs
 	const staticRoutes = [
-		{ path: '', priority: '1.0', changefreq: 'daily' },
+		{ path: '/', priority: '1.0', changefreq: 'daily' },
 		{ path: '/layanan', priority: '0.8', changefreq: 'weekly' },
 		{ path: '/babyspa', priority: '0.8', changefreq: 'weekly' },
 		{ path: '/galeri', priority: '0.7', changefreq: 'weekly' },
