@@ -11,7 +11,7 @@
           Bdn. Sri Debi Utari
         </h2>
         <p class="text-pink-100 font-montserrat text-sm leading-relaxed">
-          Memberikan pelayanan kebidanan berkualitas, ramah, dan profesional untuk ibu dan anak.
+          Providing exceptional, compassionate, and professional maternity and healthcare services tailored for mothers and newborns.
         </p>
         
         <!-- Social Icons -->
@@ -29,32 +29,32 @@
         </div>
       </div>
 
-      <!-- Layanan -->
+      <!-- Services -->
       <div class="space-y-4">
-        <h3 class="text-xs font-bold tracking-widest uppercase text-white/90 font-montserrat">Layanan</h3>
+        <h3 class="text-xs font-bold tracking-widest uppercase text-white/90 font-montserrat">Services</h3>
         <ul class="space-y-2.5">
-          <li><a href="/layanan" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Persalinan Normal</a></li>
-          <li><a href="/layanan" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Pemeriksaan Kehamilan</a></li>
-          <li><a href="/babyspa" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Baby Spa</a></li>
-          <li><a href="/layanan" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Yoga Ibu Hamil</a></li>
-          <li><a href="/layanan" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Home Care</a></li>
+          <li><a href="/layanan" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Natural Childbirth</a></li>
+          <li><a href="/layanan" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Prenatal Care</a></li>
+          <li><a href="/babyspa" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Baby Spa & Massage</a></li>
+          <li><a href="/layanan" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Prenatal Yoga</a></li>
+          <li><a href="/layanan" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">In-Home Care</a></li>
         </ul>
       </div>
 
-      <!-- Navigasi -->
+      <!-- Navigation -->
       <div class="space-y-4">
-        <h3 class="text-xs font-bold tracking-widest uppercase text-white/90 font-montserrat">Navigasi</h3>
+        <h3 class="text-xs font-bold tracking-widest uppercase text-white/90 font-montserrat">Navigation</h3>
         <ul class="space-y-2.5">
           <li><a href="/" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Home</a></li>
-          <li><a href="/tentang" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Tentang Kami</a></li>
-          <li><a href="/galeri" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Galeri</a></li>
-          <li><a href="/informasi" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Informasi</a></li>
+          <li><a href="/tentang" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">About Us</a></li>
+          <li><a href="/galeri" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Gallery</a></li>
+          <li><a href="/informasi" class="text-sm text-pink-100 hover:text-white transition-colors font-montserrat">Articles & Guides</a></li>
         </ul>
       </div>
 
-      <!-- Kontak -->
+      <!-- Contact -->
       <div class="space-y-4">
-        <h3 class="text-xs font-bold tracking-widest uppercase text-white/90 font-montserrat">Kontak</h3>
+        <h3 class="text-xs font-bold tracking-widest uppercase text-white/90 font-montserrat">Contact Us</h3>
         <div class="space-y-3">
           <div class="flex items-start gap-3">
             <svg class="w-4 h-4 text-pink-100 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
@@ -62,7 +62,7 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
             </svg>
             <p class="text-sm text-pink-100 leading-relaxed font-montserrat">
-              Jl. Wisata Desa Hamparan Pugu, Kec. Air Hangat, Kab. Kerinci, Jambi
+              Jl. Wisata Desa Hamparan Pugu, Air Hangat Dist., Kerinci Regency, Jambi
             </p>
           </div>
           <div class="flex items-center gap-3">

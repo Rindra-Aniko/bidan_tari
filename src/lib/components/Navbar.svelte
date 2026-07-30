@@ -6,10 +6,10 @@
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/babyspa', label: 'Baby Spa' },
-    { href: '/layanan', label: 'Layanan' },
-    { href: '/galeri', label: 'Galeri' },
-    { href: '/informasi', label: 'Informasi' },
-    { href: '/tentang', label: 'Tentang' }
+    { href: '/layanan', label: 'Services' },
+    { href: '/galeri', label: 'Gallery' },
+    { href: '/informasi', label: 'Articles' },
+    { href: '/tentang', label: 'About Us' }
   ];
 </script>
 
@@ -27,7 +27,7 @@
         Bdn. Sri Debi Utari
       </span>
       <span class="text-[10px] tracking-wide text-gray-400 font-medium">
-        S.Tr, S.Keb — Profesional Midwife
+        S.Tr, S.Keb — Professional Midwife
       </span>
     </div>
   </a>
@@ -46,7 +46,7 @@
     
     <a href="https://wa.me/6285266761076" target="_blank" rel="noopener noreferrer"
        class="ml-4 px-5 py-2 bg-pink-500 text-white text-sm font-semibold rounded-full hover:bg-pink-600 active:scale-95 transition-all shadow-sm hover:shadow-md">
-      Hubungi Kami
+      Contact Us
     </a>
   </div>
 
@@ -95,7 +95,7 @@
 
     <a href="https://wa.me/6285266761076" target="_blank" rel="noopener noreferrer"
        class="mt-6 w-full text-center px-5 py-3 bg-pink-500 text-white text-sm font-semibold rounded-xl hover:bg-pink-600 transition-colors shadow-sm">
-      Hubungi via WhatsApp
+      Contact via WhatsApp
     </a>
   </div>
 {/if}

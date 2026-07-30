@@ -48,7 +48,7 @@
 </script>
 
 <svelte:head>
-	<title>{article.title} — Klinik Bidan Sri Deby Utari</title>
+	<title>{article.title} — Midwife Sri Deby Utari Clinic</title>
 	<meta name="description" content={article.summary} />
 </svelte:head>
 
@@ -58,16 +58,16 @@
 		<nav class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-gray-150 pb-6">
 			<!-- Breadcrumb -->
 			<div class="flex items-center gap-2 text-xs font-semibold text-gray-400">
-				<a href="/" class="hover:text-pink-500 transition-colors">Beranda</a>
+				<a href="/" class="hover:text-pink-500 transition-colors">Home</a>
 				<svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
-				<a href="/informasi" class="hover:text-pink-500 transition-colors">Informasi</a>
+				<a href="/informasi" class="hover:text-pink-500 transition-colors">Articles</a>
 				<svg class="w-3 h-3 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
 				<span class="text-pink-500">{article.category}</span>
 			</div>
 
 			<a href="/informasi" class="inline-flex items-center gap-1.5 text-xs font-bold text-gray-500 hover:text-pink-500 transition-colors">
 				<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-				Kembali ke Artikel
+				Back to Articles
 			</a>
 		</nav>
 
@@ -90,12 +90,12 @@
 			<!-- Author details -->
 			<div class="flex items-center gap-3 pt-2">
 				<div class="w-10 h-10 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center font-bold text-sm shrink-0">
-					{(article.authorName ?? 'Bidan').substring(0, 2).toUpperCase()}
+					{(article.authorName ?? 'Midwife').substring(0, 2).toUpperCase()}
 				</div>
 				<div>
-					<p class="text-sm font-bold text-gray-800 leading-tight">Ditulis oleh {article.authorName ?? 'Bidan'}</p>
+					<p class="text-sm font-bold text-gray-800 leading-tight">Written by {article.authorName ?? 'Midwife'}</p>
 					<p class="text-[11px] text-gray-400">
-						Diterbitkan pada {new Date(article.createdAt).toLocaleDateString('id-ID', {
+						Published on {new Date(article.createdAt).toLocaleDateString('en-US', {
 							day: 'numeric',
 							month: 'long',
 							year: 'numeric'
