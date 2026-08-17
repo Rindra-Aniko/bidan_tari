@@ -25,14 +25,14 @@
     <!-- Bottom fade: blends into the next white section -->
     <div class="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent"></div>
     <!-- Subtle pink tint -->
-    <div class="absolute inset-0 bg-pink-500 mix-blend-overlay opacity-10"></div>
+    <div class="absolute inset-0 bg-pink-600 mix-blend-overlay opacity-10"></div>
   </div>
 
   <div class="container mx-auto px-6 md:px-12 lg:px-24 relative z-10">
     <div class="max-w-2xl">
 
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/60 backdrop-blur-md border border-pink-100/50 rounded-full mb-8 shadow-sm">
-        <span class="w-2 h-2 bg-pink-500 rounded-full"></span>
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white/95 backdrop-blur-md border border-pink-100/50 rounded-full mb-8 shadow-sm">
+        <span class="w-2 h-2 bg-pink-600 rounded-full"></span>
         <span class="text-pink-600 text-xs font-semibold tracking-wide font-montserrat uppercase">Maternal & Child Care</span>
       </div>
 
@@ -52,7 +52,7 @@
 
       <div class="flex flex-wrap gap-4 items-center">
         <a href="https://wa.me/6285266761076" target="_blank" rel="noopener noreferrer" 
-           class="inline-flex items-center gap-2 px-8 py-3.5 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition-all shadow-sm hover:shadow-lg hover:shadow-pink-500/20 text-sm font-semibold font-montserrat active:scale-95">
+           class="inline-flex items-center gap-2 px-8 py-3.5 bg-pink-600 text-white rounded-full hover:bg-pink-700 transition-all shadow-sm hover:shadow-lg hover:shadow-pink-500/20 text-sm font-semibold font-montserrat active:scale-95">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
           </svg>
@@ -60,7 +60,7 @@
         </a>
         
         <a href="/layanan" 
-           class="px-8 py-3.5 bg-white/80 backdrop-blur-sm border border-pink-200 text-gray-800 rounded-full hover:bg-white hover:text-pink-600 transition-all text-sm font-semibold font-montserrat shadow-sm">
+           class="px-8 py-3.5 bg-white/95 backdrop-blur-sm border border-pink-200 text-gray-800 rounded-full hover:bg-white hover:text-pink-600 transition-all text-sm font-semibold font-montserrat shadow-sm">
           Explore Services
         </a>
       </div>
@@ -77,7 +77,7 @@
     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight mt-3 mb-4 font-merriweather">
       Our Signature Services
     </h2>
-    <p class="text-gray-400 text-base max-w-xl mx-auto leading-relaxed font-montserrat">
+    <p class="text-gray-500 text-base max-w-xl mx-auto leading-relaxed font-montserrat">
       Committed to delivering holistic maternal and newborn healthcare with gentle, loving expertise.
     </p>
   </div>
@@ -85,105 +85,105 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
     
     <!-- Natural Childbirth -->
-    <div use:reveal={{ y: 50 }} class="bg-white rounded-2xl p-7 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
-      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-5">
+    <div use:reveal={{ y: 50 }} class="bg-white rounded-2xl p-7 border border-pink-200 hover:border-pink-400 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
+      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 mb-5">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
         </svg>
       </div>
       <h3 class="text-gray-900 font-bold text-base mb-2 font-merriweather">Natural Childbirth</h3>
-      <p class="text-gray-400 text-sm leading-relaxed font-montserrat">
+      <p class="text-gray-500 text-sm leading-relaxed font-montserrat">
         Gentle, comfortable, and safe deliveries with dedicated 24/7 expert midwife support.
       </p>
     </div>
 
     <!-- Prenatal Care -->
-    <div use:reveal={{ y: 50}} class="bg-white rounded-2xl p-7 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
-      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-5">
+    <div use:reveal={{ y: 50}} class="bg-white rounded-2xl p-7 border border-pink-200 hover:border-pink-400 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
+      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 mb-5">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
         </svg>
       </div>
       <h3 class="text-gray-900 font-bold text-base mb-2 font-merriweather">Prenatal Care</h3>
-      <p class="text-gray-400 text-sm leading-relaxed font-montserrat">
+      <p class="text-gray-500 text-sm leading-relaxed font-montserrat">
         Routine checkups monitoring your baby's growth and mother's health at every stage.
       </p>
     </div>
 
     <!-- Family Planning (KB) -->
-    <div use:reveal={{ y: 50 }} class="bg-white rounded-2xl p-7 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
-      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-5">
+    <div use:reveal={{ y: 50 }} class="bg-white rounded-2xl p-7 border border-pink-200 hover:border-pink-400 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
+      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 mb-5">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
         </svg>
       </div>
       <h3 class="text-gray-900 font-bold text-base mb-2 font-merriweather">Family Planning (KB)</h3>
-      <p class="text-gray-400 text-sm leading-relaxed font-montserrat">
+      <p class="text-gray-500 text-sm leading-relaxed font-montserrat">
         Complete contraceptive solutions: IUDs, Implants, Injections, and consultations.
       </p>
     </div>
 
     <!-- Baby Spa -->
-    <div use:reveal={{ y: 40 }} class="bg-white rounded-2xl p-7 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
-      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-5">
+    <div use:reveal={{ y: 40 }} class="bg-white rounded-2xl p-7 border border-pink-200 hover:border-pink-400 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
+      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 mb-5">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z" />
         </svg>
       </div>
       <h3 class="text-gray-900 font-bold text-base mb-2 font-merriweather">Baby Spa & Massage</h3>
-      <p class="text-gray-400 text-sm leading-relaxed font-montserrat">
+      <p class="text-gray-500 text-sm leading-relaxed font-montserrat">
         Soothing relaxation for your little one to boost appetite and promote deep sleep.
       </p>
     </div>
 
     <!-- Prenatal Yoga -->
-    <div use:reveal={{ y: 40 }} class="bg-white rounded-2xl p-7 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
-      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-5">
+    <div use:reveal={{ y: 40 }} class="bg-white rounded-2xl p-7 border border-pink-200 hover:border-pink-400 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
+      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 mb-5">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z" />
         </svg>
       </div>
       <h3 class="text-gray-900 font-bold text-base mb-2 font-merriweather">Prenatal Yoga</h3>
-      <p class="text-gray-400 text-sm leading-relaxed font-montserrat">
+      <p class="text-gray-500 text-sm leading-relaxed font-montserrat">
         Specialized prenatal exercises to build flexibility, ease anxiety, and prepare for birth.
       </p>
     </div>
 
     <!-- In-Home Care -->
-    <div use:reveal={{ y: 40 }} class="bg-white rounded-2xl p-7 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
-      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-5">
+    <div use:reveal={{ y: 40 }} class="bg-white rounded-2xl p-7 border border-pink-200 hover:border-pink-400 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
+      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 mb-5">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
         </svg>
       </div>
       <h3 class="text-gray-900 font-bold text-base mb-2 font-merriweather">In-Home Care</h3>
-      <p class="text-gray-400 text-sm leading-relaxed font-montserrat">
+      <p class="text-gray-500 text-sm leading-relaxed font-montserrat">
         Personalized maternal and infant healthcare delivered directly in your own home.
       </p>
     </div>
 
     <!-- Postpartum Massage -->
-    <div use:reveal={{ y: 40 }} class="bg-white rounded-2xl p-7 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
-      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-5">
+    <div use:reveal={{ y: 40 }} class="bg-white rounded-2xl p-7 border border-pink-200 hover:border-pink-400 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
+      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 mb-5">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15" />
         </svg>
       </div>
       <h3 class="text-gray-900 font-bold text-base mb-2 font-merriweather">Postpartum Massage</h3>
-      <p class="text-gray-400 text-sm leading-relaxed font-montserrat">
+      <p class="text-gray-500 text-sm leading-relaxed font-montserrat">
         Restorative post-natal therapy to restore stamina, boost circulation, and revitalize.
       </p>
     </div>
 
     <!-- Infant Ear Piercing -->
-    <div use:reveal={{ y: 40 }} class="bg-white rounded-2xl p-7 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
-      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-500 mb-5">
+    <div use:reveal={{ y: 40 }} class="bg-white rounded-2xl p-7 border border-pink-200 hover:border-pink-400 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col h-full">
+      <div class="w-10 h-10 bg-pink-50 rounded-xl flex items-center justify-center text-pink-600 mb-5">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
         </svg>
       </div>
       <h3 class="text-gray-900 font-bold text-base mb-2 font-merriweather">Infant Ear Piercing</h3>
-      <p class="text-gray-400 text-sm leading-relaxed font-montserrat">
+      <p class="text-gray-500 text-sm leading-relaxed font-montserrat">
         Gentle ear piercing for newborns performed under strict, sterile medical protocols.
       </p>
     </div>
@@ -201,13 +201,13 @@
       <div class="grid grid-cols-2 gap-4" use:reveal={{ y: 50, duration: 800 }}>
         <div class="bg-white rounded-2xl p-8 border border-pink-100 text-center col-span-1">
           <span class="font-merriweather text-4xl md:text-5xl font-black text-pink-500 block">12+</span>
-          <span class="text-xs font-semibold text-gray-400 tracking-wider mt-2 uppercase font-montserrat block">Years Experience</span>
+          <span class="text-xs font-semibold text-gray-500 tracking-wider mt-2 uppercase font-montserrat block">Years Experience</span>
         </div>
         <div class="bg-white rounded-2xl p-8 border border-pink-100 text-center col-span-1">
           <span class="font-merriweather text-4xl md:text-5xl font-black text-pink-500 block">24/7</span>
-          <span class="text-xs font-semibold text-gray-400 tracking-wider mt-2 uppercase font-montserrat block">Always Ready</span>
+          <span class="text-xs font-semibold text-gray-500 tracking-wider mt-2 uppercase font-montserrat block">Always Ready</span>
         </div>
-        <div class="bg-pink-500 rounded-2xl p-8 text-center text-white col-span-2">
+        <div class="bg-pink-600 rounded-2xl p-8 text-center text-white col-span-2">
           <h3 class="font-merriweather text-2xl font-bold tracking-tight">BPJS & PRIVATE</h3>
           <p class="text-sm text-white/80 font-medium mt-1 font-montserrat">Welcoming Patients from All Walks of Life</p>
         </div>
@@ -227,38 +227,38 @@
 
         <div class="space-y-5">
           <div class="flex items-start gap-4 group">
-            <div class="mt-0.5 flex-shrink-0 w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-500 transition-colors">
-              <svg class="w-4 h-4 text-pink-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <div class="mt-0.5 flex-shrink-0 w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-600 transition-colors">
+              <svg class="w-4 h-4 text-pink-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-gray-900 font-merriweather text-base">Proven Expertise</h4>
-              <p class="text-gray-400 font-montserrat text-sm">12+ years of hands-on experience guiding thousands of safe, successful deliveries.</p>
+              <p class="font-bold text-gray-900 font-merriweather text-base">Proven Expertise</p>
+              <p class="text-gray-500 font-montserrat text-sm">12+ years of hands-on experience guiding thousands of safe, successful deliveries.</p>
             </div>
           </div>
 
           <div class="flex items-start gap-4 group">
-            <div class="mt-0.5 flex-shrink-0 w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-500 transition-colors">
-              <svg class="w-4 h-4 text-pink-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <div class="mt-0.5 flex-shrink-0 w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-600 transition-colors">
+              <svg class="w-4 h-4 text-pink-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-gray-900 font-merriweather text-base">Modern & Homey Facilities</h4>
-              <p class="text-gray-400 font-montserrat text-sm">Clean, peaceful, and home-like birthing suites designed for ultimate comfort.</p>
+              <p class="font-bold text-gray-900 font-merriweather text-base">Modern & Homey Facilities</p>
+              <p class="text-gray-500 font-montserrat text-sm">Clean, peaceful, and home-like birthing suites designed for ultimate comfort.</p>
             </div>
           </div>
 
           <div class="flex items-start gap-4 group">
-            <div class="mt-0.5 flex-shrink-0 w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-500 transition-colors">
-              <svg class="w-4 h-4 text-pink-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+            <div class="mt-0.5 flex-shrink-0 w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-600 transition-colors">
+              <svg class="w-4 h-4 text-pink-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
               </svg>
             </div>
             <div>
-              <h4 class="font-bold text-gray-900 font-merriweather text-base">Personalized & Loving Care</h4>
-              <p class="text-gray-400 font-montserrat text-sm">Warm, empathetic consultations where you are listened to and truly valued.</p>
+              <p class="font-bold text-gray-900 font-merriweather text-base">Personalized & Loving Care</p>
+              <p class="text-gray-500 font-montserrat text-sm">Warm, empathetic consultations where you are listened to and truly valued.</p>
             </div>
           </div>
         </div>
@@ -278,7 +278,7 @@
       <h2 class="text-3xl md:text-4xl font-merriweather font-bold text-gray-900 mt-3 mb-4 tracking-tight">
         Heartfelt Stories from Our Mothers
       </h2>
-      <p class="text-gray-400 text-base max-w-lg mx-auto font-montserrat">
+      <p class="text-gray-500 text-base max-w-lg mx-auto font-montserrat">
         Real experiences shared by mothers who trusted us with their most precious moments.
       </p>
     </div>
@@ -286,7 +286,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6" use:reveal={{ y: 50, duration: 800 }}>
 
       <!-- Testimonial 1 -->
-      <div class="bg-white rounded-2xl p-8 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+      <div class="bg-white rounded-2xl p-8 border border-pink-200 hover:border-pink-400 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
         <div>
           <!-- Stars -->
           <div class="flex items-center gap-0.5 mb-5">
@@ -306,14 +306,14 @@
         <div class="flex items-center gap-3">
           <img class="w-10 h-10 rounded-full object-cover" src="/image/deka_apriani.webp" alt="Mrs. Deka" width="40" height="40" loading="lazy">
           <div>
-            <h4 class="text-gray-900 font-bold text-sm font-merriweather">Mrs. Deka</h4>
+            <p class="text-gray-900 font-bold text-sm font-merriweather">Mrs. Deka</p>
             <p class="text-pink-500 text-xs font-medium font-montserrat">Natural Childbirth Patient</p>
           </div>
         </div>
       </div>
 
       <!-- Testimonial 2 -->
-      <div class="bg-white rounded-2xl p-8 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+      <div class="bg-white rounded-2xl p-8 border border-pink-200 hover:border-pink-400 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
         <div>
           <div class="flex items-center gap-0.5 mb-5">
             {#each Array(5) as _}
@@ -331,14 +331,14 @@
         <div class="flex items-center gap-3">
           <img class="w-10 h-10 rounded-full object-cover" src="/image/meri_fitriani.webp" alt="Mrs. Meri" width="40" height="40" loading="lazy">
           <div>
-            <h4 class="text-gray-900 font-bold text-sm font-merriweather">Mrs. Meri</h4>
+            <p class="text-gray-900 font-bold text-sm font-merriweather">Mrs. Meri</p>
             <p class="text-pink-500 text-xs font-medium font-montserrat">Baby Spa Parent</p>
           </div>
         </div>
       </div>
 
       <!-- Testimonial 3 -->
-      <div class="bg-white rounded-2xl p-8 border border-pink-100/80 hover:border-pink-200 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+      <div class="bg-white rounded-2xl p-8 border border-pink-200 hover:border-pink-400 hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
         <div>
           <div class="flex items-center gap-0.5 mb-5">
             {#each Array(5) as _}
@@ -356,7 +356,7 @@
         <div class="flex items-center gap-3">
           <img class="w-10 h-10 rounded-full object-cover" src="/image/nialana_afrilia.webp" alt="Mrs. Nailana" width="40" height="40" loading="lazy">
           <div>
-            <h4 class="text-gray-900 font-bold text-sm font-merriweather">Mrs. Nailana</h4>
+            <p class="text-gray-900 font-bold text-sm font-merriweather">Mrs. Nailana</p>
             <p class="text-pink-500 text-xs font-medium font-montserrat">BPJS Patient</p>
           </div>
         </div>
@@ -369,16 +369,16 @@
 
 <!-- CTA Section -->
 <section class="w-full px-6 py-12 mb-12">
-  <div class="max-w-4xl mx-auto bg-pink-500 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden" use:reveal={{ y: 50, duration: 800 }}>
+  <div class="max-w-4xl mx-auto bg-pink-600 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden" use:reveal={{ y: 50, duration: 800 }}>
     <!-- Decorative -->
-    <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
-    <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full blur-3xl -ml-16 -mb-16"></div>
+    <div class="absolute top-0 right-0 w-64 h-64 bg-white/95 rounded-full blur-3xl -mr-20 -mt-20"></div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/95 rounded-full blur-3xl -ml-16 -mb-16"></div>
     
     <div class="relative z-10">
       <h2 class="font-merriweather text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
         Ready for a Safe & Beautiful Journey?
       </h2>
-      <p class="text-pink-100 text-base md:text-lg font-montserrat mb-8 max-w-lg mx-auto leading-relaxed">
+      <p class="text-white text-base md:text-lg font-montserrat mb-8 max-w-lg mx-auto leading-relaxed">
         Contact us today to schedule your prenatal checkup or for 24/7 emergency birthing care.
       </p>
 

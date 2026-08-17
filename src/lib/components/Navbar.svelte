@@ -26,7 +26,7 @@
       <span class="text-sm md:text-base font-bold tracking-tight text-gray-900 leading-tight">
         Bdn. Sri Debi Utari
       </span>
-      <span class="text-[10px] tracking-wide text-gray-400 font-medium">
+      <span class="text-[10px] tracking-wide text-gray-700 font-medium">
         S.Tr, S.Keb — Professional Midwife
       </span>
     </div>
