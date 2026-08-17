@@ -29,7 +29,7 @@
     class="fixed bottom-24 right-4 sm:right-6 z-50 w-[calc(100vw-2rem)] sm:w-[350px] bg-white rounded-2xl shadow-2xl border border-pink-100 overflow-hidden flex flex-col font-montserrat"
   >
     <!-- Header -->
-    <div class="bg-pink-500 p-4 flex items-center justify-between text-white">
+    <div class="bg-pink-700 p-4 flex items-center justify-between text-white">
       <div class="flex items-center gap-3">
         <!-- Avatar with active online indicator -->
         <div class="relative w-10 h-10 rounded-full border border-white/20 overflow-hidden bg-pink-100 flex-shrink-0">
@@ -38,7 +38,7 @@
         </div>
         <div>
           <h4 class="font-bold text-sm leading-tight text-white">Bdn. Sri Debi Utari</h4>
-          <span class="text-[11px] text-pink-100 font-medium block">Active • Usually replies instantly</span>
+          <span class="text-[11px] text-white/90 font-medium block">Active • Usually replies instantly</span>
         </div>
       </div>
       <!-- Close Button -->
@@ -81,7 +81,7 @@
         target="_blank" 
         rel="noopener noreferrer"
         onclick={() => isOpen = false}
-        class="w-full bg-pink-500 hover:bg-pink-600 active:scale-98 text-white font-semibold text-xs py-3 px-4 rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all"
+        class="w-full bg-pink-700 hover:bg-pink-800 active:scale-98 text-white font-semibold text-xs py-3 px-4 rounded-xl flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all"
       >
         <!-- WhatsApp Icon inside button -->
         <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24">

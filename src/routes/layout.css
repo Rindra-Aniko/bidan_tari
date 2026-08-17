@@ -8,15 +8,15 @@
   /* Overwrite the default sans font */
   --font-sans: var(--font-montserrat);
 
-  /* Pink Palette — Minimalis Modern */
+  /* Pink Palette — High Contrast Bold Pink */
   --color-pink-50:  #FDF2F8;
   --color-pink-100: #FCE7F3;
   --color-pink-200: #FBCFE8;
   --color-pink-300: #F9A8D4;
   --color-pink-400: #F472B6;
-  --color-pink-500: #EC4899;
-  --color-pink-600: #DB2777;
-  --color-pink-700: #BE185D;
+  --color-pink-500: #BE185D;
+  --color-pink-600: #9D174D;
+  --color-pink-700: #831843;
 }
 
 @layer base {
@@ -45,8 +45,8 @@
 
   /* Selection color */
   ::selection {
-    background-color: #FCE7F3;
-    color: #BE185D;
+    background-color: #BE185D;
+    color: #FFFFFF;
   }
 }
 

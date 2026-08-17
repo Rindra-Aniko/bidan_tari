@@ -215,14 +215,14 @@
 
 <!-- CTA Section -->
 <section class="w-full px-6 py-12 mb-12">
-  <div class="max-w-4xl mx-auto bg-pink-500 rounded-3xl p-12 md:p-16 relative overflow-hidden text-center" use:reveal={{ y: 50, duration: 800 }}>
+  <div class="max-w-4xl mx-auto bg-pink-700 rounded-3xl p-12 md:p-16 relative overflow-hidden text-center" use:reveal={{ y: 50, duration: 800 }}>
     <!-- Decorative -->
     <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-20 -mt-20"></div>
     <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full blur-3xl -ml-16 -mb-16"></div>
 
     <div class="relative z-10">
 
-      <span class="text-xs font-semibold tracking-widest text-pink-100 uppercase block mb-4 font-montserrat">
+      <span class="text-xs font-semibold tracking-widest text-white uppercase block mb-4 font-montserrat">
         Get in Touch
       </span>
 
@@ -230,7 +230,7 @@
         Ready to Begin Your Beautiful Journey?
       </h2>
 
-      <p class="text-pink-100 text-base md:text-lg font-montserrat max-w-2xl mx-auto leading-relaxed mb-10">
+      <p class="text-white text-base md:text-lg font-montserrat max-w-2xl mx-auto leading-relaxed mb-10">
         We are here to listen, guide, and provide the absolute best care for you and your precious little one.
       </p>
 
@@ -238,7 +238,7 @@
         href="https://wa.me/6285266761076"
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 bg-white hover:bg-pink-50 text-pink-500 font-medium text-sm md:text-base px-8 py-3.5 rounded-full transition-all duration-300 font-montserrat shadow-lg shadow-black/5"
+        class="inline-flex items-center gap-2 bg-white hover:bg-pink-50 text-pink-700 font-medium text-sm md:text-base px-8 py-3.5 rounded-full transition-all duration-300 font-montserrat shadow-lg shadow-black/5"
       >
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
           <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>

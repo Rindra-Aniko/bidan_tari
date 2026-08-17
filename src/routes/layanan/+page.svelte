@@ -109,7 +109,7 @@
       </div>
 
       <!-- Senam Yoga (wide dark card) -->
-      <div class="md:col-span-2 bg-pink-500 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row gap-10 items-center justify-between relative overflow-hidden" use:reveal={{ y: 50, duration: 800 }}>
+      <div class="md:col-span-2 bg-pink-700 rounded-2xl p-8 md:p-10 flex flex-col md:flex-row gap-10 items-center justify-between relative overflow-hidden" use:reveal={{ y: 50, duration: 800 }}>
         <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
         <div class="w-full md:w-1/2 flex flex-col items-start relative z-10">
           <div class="w-12 h-12 bg-white/20 text-white rounded-2xl flex items-center justify-center mb-6 border border-white/20">
@@ -118,7 +118,7 @@
             </svg>
           </div>
           <h3 class="text-2xl font-bold text-white mb-4 font-merriweather">Prenatal Yoga</h3>
-          <p class="text-pink-100 text-sm leading-relaxed font-montserrat">
+          <p class="text-white text-sm leading-relaxed font-montserrat">
             Specialized exercises designed to refine breathing techniques, muscle flexibility, and mental calmness to prepare your body for childbirth.
           </p>
         </div>
@@ -251,19 +251,19 @@
 
 <!-- CTA -->
 <section class="w-full px-6 py-12 mb-12">
-  <div class="max-w-4xl mx-auto bg-pink-500 rounded-3xl p-12 md:p-16 relative overflow-hidden text-center" use:reveal={{ y: 50, duration: 800 }}>
+  <div class="max-w-4xl mx-auto bg-pink-700 rounded-3xl p-12 md:p-16 relative overflow-hidden text-center" use:reveal={{ y: 50, duration: 800 }}>
     <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48 blur-3xl"></div>
     <div class="relative z-10">
-      <span class="text-pink-100 text-xs font-montserrat font-semibold uppercase tracking-widest">Contact Us</span>
+      <span class="text-white text-xs font-montserrat font-semibold uppercase tracking-widest">Contact Us</span>
       <h2 class="font-merriweather text-4xl md:text-5xl font-bold text-white mt-4 mb-6 leading-tight">
         Ready to Start Your <br/><span class="text-white">Healthy Journey?</span>
       </h2>
 
-      <p class="font-montserrat text-pink-100 text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+      <p class="font-montserrat text-white text-base md:text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
         Reach out today to discuss your pregnancy needs or book a session for your baby with Midwife Tari Clinic.
       </p>
 
-      <a href="https://wa.me/6285266761076" class="inline-flex items-center gap-3 bg-white text-pink-500 font-semibold px-8 py-3.5 rounded-full hover:bg-pink-50 transition-all duration-300 font-montserrat shadow-lg shadow-black/5">
+      <a href="https://wa.me/6285266761076" class="inline-flex items-center gap-3 bg-white text-pink-700 font-semibold px-8 py-3.5 rounded-full hover:bg-pink-50 transition-all duration-300 font-montserrat shadow-lg shadow-black/5">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
           <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
         </svg>

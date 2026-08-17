@@ -261,7 +261,7 @@
 
       <!-- 100% Natural Ingredients -->
       <div
-        class="bg-pink-500 rounded-2xl p-10 flex flex-col items-center justify-center text-center min-h-[280px] border border-pink-400 hover:-translate-y-0.5 transition-all duration-300"
+        class="bg-pink-700 rounded-2xl p-10 flex flex-col items-center justify-center text-center min-h-[280px] border border-pink-600 hover:-translate-y-0.5 transition-all duration-300"
         use:reveal={{ y: 40, duration: 600, delay: 100 }}
       >
         <span
@@ -270,7 +270,7 @@
           100%
         </span>
         <span
-          class="text-xs font-semibold text-white/80 tracking-[0.3em] uppercase font-montserrat"
+          class="text-xs font-semibold text-white/90 tracking-[0.3em] uppercase font-montserrat"
         >
           Natural Ingredients
         </span>
@@ -278,7 +278,7 @@
 
       <!-- Certified Midwife -->
       <div
-        class="bg-pink-500 rounded-2xl p-10 flex flex-col items-center justify-center text-center min-h-[280px] border border-pink-400 hover:-translate-y-0.5 transition-all duration-300"
+        class="bg-pink-700 rounded-2xl p-10 flex flex-col items-center justify-center text-center min-h-[280px] border border-pink-600 hover:-translate-y-0.5 transition-all duration-300"
         use:reveal={{ y: 40, duration: 600, delay: 200 }}
       >
         <div class="text-white mb-6">
@@ -297,7 +297,7 @@
           </svg>
         </div>
         <span
-          class="text-xs font-semibold text-pink-100 tracking-[0.3em] uppercase font-montserrat"
+          class="text-xs font-semibold text-white tracking-[0.3em] uppercase font-montserrat"
         >
           Certified Midwives
         </span>

@@ -207,7 +207,7 @@
           <span class="font-merriweather text-4xl md:text-5xl font-black text-pink-500 block">24/7</span>
           <span class="text-xs font-semibold text-gray-500 tracking-wider mt-2 uppercase font-montserrat block">Always Ready</span>
         </div>
-        <div class="bg-pink-600 rounded-2xl p-8 text-center text-white col-span-2">
+        <div class="bg-pink-700 rounded-2xl p-8 text-center text-white col-span-2">
           <h3 class="font-merriweather text-2xl font-bold tracking-tight">BPJS & PRIVATE</h3>
           <p class="text-sm text-white/80 font-medium mt-1 font-montserrat">Welcoming Patients from All Walks of Life</p>
         </div>
@@ -369,7 +369,7 @@
 
 <!-- CTA Section -->
 <section class="w-full px-6 py-12 mb-12">
-  <div class="max-w-4xl mx-auto bg-pink-600 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden" use:reveal={{ y: 50, duration: 800 }}>
+  <div class="max-w-4xl mx-auto bg-pink-700 rounded-3xl p-12 md:p-16 text-center relative overflow-hidden" use:reveal={{ y: 50, duration: 800 }}>
     <!-- Decorative -->
     <div class="absolute top-0 right-0 w-64 h-64 bg-white/95 rounded-full blur-3xl -mr-20 -mt-20"></div>
     <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/95 rounded-full blur-3xl -ml-16 -mb-16"></div>

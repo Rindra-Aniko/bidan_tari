@@ -158,11 +158,11 @@
         <!-- Sidebar -->
         <div class="space-y-8 flex flex-col">
           <!-- Tips Mingguan -->
-          <div class="bg-pink-500 rounded-2xl p-8 relative overflow-hidden group">
+          <div class="bg-pink-700 rounded-2xl p-8 relative overflow-hidden group">
             <div class="absolute top-0 right-0 w-28 h-28 bg-white/10 rounded-full -mr-14 -mt-14 transition-transform group-hover:scale-125"></div>
             <h3 class="text-xl font-black text-white mb-3 font-merriweather relative z-10">Weekly Health Tips</h3>
-            <p class="text-pink-100 text-sm mb-6 font-montserrat relative z-10">Get premium maternal health advice delivered directly to your WhatsApp.</p>
-            <a href="https://wa.me/6285266761076" target="_blank" rel="noopener noreferrer" class="block w-full bg-white hover:bg-pink-50 text-pink-500 font-bold py-3.5 px-6 rounded-full transition-all duration-300 relative z-10 uppercase tracking-widest text-xs text-center">
+            <p class="text-white text-sm mb-6 font-montserrat relative z-10">Get premium maternal health advice delivered directly to your WhatsApp.</p>
+            <a href="https://wa.me/6285266761076" target="_blank" rel="noopener noreferrer" class="block w-full bg-white hover:bg-pink-50 text-pink-700 font-bold py-3.5 px-6 rounded-full transition-all duration-300 relative z-10 uppercase tracking-widest text-xs text-center">
               Subscribe for Free
             </a>
           </div>
