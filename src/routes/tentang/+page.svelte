@@ -1,5 +1,7 @@
 <script>
   import { reveal } from "$lib/actions/reveal.js";
+
+  let showMap = $state(false);
 </script>
 
 <svelte:head>
@@ -386,18 +388,79 @@
         </div>
 
         <div
-          class="w-full md:w-[320px] h-[220px] md:h-auto rounded-2xl overflow-hidden border border-pink-100 shrink-0"
+          class="w-full md:w-[320px] h-[220px] md:h-auto min-h-[220px] rounded-2xl overflow-hidden border border-pink-100 shrink-0 relative bg-pink-50/70 flex items-center justify-center"
         >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7295284308127!2d101.45399669999999!3d-1.7909023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2d5c61a3c5ffb3%3A0x10fb3db1caba1e1e!2sBidan%20Deby!5e0!3m2!1sen!2sid!4v1747971606067!5m2!1sen!2sid"
-            class="w-full h-full min-h-[200px]"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            title="Clinic Location Map"
-            referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+          {#if showMap}
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7295284308127!2d101.45399669999999!3d-1.7909023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e2d5c61a3c5ffb3%3A0x10fb3db1caba1e1e!2sBidan%20Deby!5e0!3m2!1sen!2sid!4v1747971606067!5m2!1sen!2sid"
+              class="w-full h-full min-h-[220px] border-0"
+              allowfullscreen=""
+              loading="lazy"
+              title="Clinic Location Map"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          {:else}
+            <!-- Map Facade / Placeholder to avoid 400+ KB render-blocking external scripts -->
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-pink-50 via-white to-pink-100 flex flex-col items-center justify-center p-6 text-center"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-pink-500/10 text-pink-500 flex items-center justify-center mb-3 shadow-inner"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="text-xs font-bold text-gray-900 mb-1 font-merriweather"
+              >
+                Bidan Deby Clinic
+              </p>
+              <p
+                class="text-[11px] text-gray-500 mb-3 font-montserrat line-clamp-1"
+              >
+                Hamparan Pugu, Kerinci
+              </p>
+              <button
+                type="button"
+                onclick={() => (showMap = true)}
+                class="inline-flex items-center gap-1.5 bg-pink-500 hover:bg-pink-600 active:scale-95 text-white text-xs font-medium px-4 py-2 rounded-full shadow-md transition-all duration-200 font-montserrat cursor-pointer"
+              >
+                <span>Buka Peta Interaktif</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-3.5 w-3.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
+          {/if}
         </div>
       </div>
     </div>
