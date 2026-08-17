@@ -28,13 +28,13 @@
 
 {#if !$page.url.pathname.startsWith('/admin')}
 	<Navbar />
-{/if}
-
-{@render children()}
-
-{#if !$page.url.pathname.startsWith('/admin')}
+	<main id="main-content">
+		{@render children()}
+	</main>
 	<Footer />
 	<WhatsAppWidget />
+{:else}
+	{@render children()}
 {/if}
 
 <style>
