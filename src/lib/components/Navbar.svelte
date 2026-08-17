@@ -18,8 +18,8 @@
     
   <!-- Logo -->
   <a href="/" class="flex items-center space-x-3 group">
-    <div class="w-10 h-10 md:w-11 md:h-11 rounded-xl flex items-center justify-center overflow-hidden bg-pink-50 shadow-sm group-hover:shadow-md transition-shadow">
-      <img src="/favicon.svg" alt="Logo" class="w-8 h-8 md:w-9 md:h-9 object-contain" width="36" height="36" />
+    <div class="w-10 h-10 md:w-11 md:h-11 rounded-xl flex items-center justify-center overflow-hidden">
+      <img src="/favicon.ico" alt="Logo" class="w-8 h-8 md:w-9 md:h-9 object-contain" width="36" height="36" />
     </div>
 
     <div class="flex flex-col">
